@@ -119,9 +119,9 @@ export default function Portfolio() {
                 </CardContent>
                 <CardActions>
                   <Button size="small" color="primary">
-                    <a target="_blank" href=''>View</a>
+                    <a target="_blank" href='https://github.com/phuong144/Njoy'>View</a>
                   </Button>
-                  <Button name='1' size="small" color="primary" onClick={alert('Project hosting unavailable')}>
+                  <Button name='1' size="small" color="primary" target="_blank" href='https://github.com/phuong144/Njoy'>
                     Learn More
                   </Button>
                   <Modal
