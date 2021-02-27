@@ -15,6 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import GoldenMean from './images/GoldenMean.jpg';
+import Njoy from './images/Njoy.png';
 import splits from './images/splits.jpg';
 import resistor from './images/resistor.png';
 import Modal from '@material-ui/core/Modal';
@@ -101,6 +102,57 @@ export default function Portfolio() {
       <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={Njoy}
+                  title="Njoy"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Njoy
+                  </Typography>
+                  <Typography>
+                    Make time for the things you enjoy
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" color="primary">
+                    <a target="_blank" href=''>View</a>
+                  </Button>
+                  <Button name='1' size="small" color="primary" onClick={alert('Project hosting unavailable')}>
+                    Learn More
+                  </Button>
+                  <Modal
+                    aria-labelledby="transition-modal-title"
+                    aria-describedby="transition-modal-description"
+                    className={classes.modal}
+                    open={open}
+                    onClose={handleClose}
+                    closeAfterTransition
+                    BackdropComponent={Backdrop}
+                    BackdropProps={{
+                      timeout: 500
+                    }}
+                  >
+                    <Fade in={open}>
+                      <div className={classes.paper}>
+                        <h2>Njoy</h2>
+                        <p>
+                          Njoy is a full stack web application that aims to give users the opportunity to make time for the things they enjoy doing.
+                          By inputting activities with their respective timeslots, the app will generate a schedule for those activities for you.
+                          You can also drag and drop any scheduled activity to make it flexible to your own schedule!
+                        </p>
+                        <Button size="small" color="primary">
+                          <a target="_blank" href=''>View</a>
+                        </Button>
+                      </div>
+                    </Fade>
+                  </Modal>
+                </CardActions>
+              </Card>
+            </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
