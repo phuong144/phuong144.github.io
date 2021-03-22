@@ -96,7 +96,7 @@ export default function Landing() {
               Patrick Phuong
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Software Developer Intern
+              Software Developer
               <br></br>
               <a target='_blank' href={resume}>Resume</a>
             </Typography>
@@ -105,14 +105,14 @@ export default function Landing() {
         <Container className={classes.cardGrid} maxWidth="md">
           <h1 id='aboutme' style={{textAlign:'center'}}>ABOUT ME</h1>
           <Typography variant="h5" align="center" color="textPrimary" paragraph>
-            Hello! My name is Patrick Phuong. I am currently in my last year of college at UC Santa Cruz studying Computer Science.
+            Hello! My name is Patrick Phuong. I am a new graduate from UC Santa Cruz with a bachelors in Computer Science.
             My key interests within software engineering include full stack web development, cloud computing, and computer security!
-            Besides coding, I love to workout, focus on my diet, play volleyball, and finally spend time
+            Besides coding, I love to workout, focus on my diet, play volleyball, play video games, and finally spend time
             with loved ones.
           </Typography>
           <br></br>
           <Typography variant="h5" align="center" color="textPrimary" paragraph>
-            I am currently working at HydroLogic Purification Systems as a software developer intern. So far, I've built HyperLogic, a
+            I am currently working at HydroLogic Purification Systems as a software developer. So far, I've built HyperLogic, a
             mobile web app that allows customers to register their commerical reverse osmosis systems. I also just finished building an 
             internal web app for admins to search through the associated database and implemented a ticket logging system!
           </Typography>

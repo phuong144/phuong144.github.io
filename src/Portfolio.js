@@ -70,6 +70,7 @@ export default function Portfolio() {
   const [open, setOpen] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
   const [open3, setOpen3] = React.useState(false);
+  const [open4, setOpen4] = React.useState(false);
 
 
   const handleOpen = (e) => {
@@ -96,6 +97,14 @@ export default function Portfolio() {
     setOpen3(false);
   };
 
+  const handleOpen4 = (e) => {
+    setOpen4(true)
+  };
+
+  const handleClose4 = () => {
+    setOpen4(false);
+  };
+
   return(
     <div id='projects' className={classes.heroContent}>
       <h1 style={{textAlign:'center'}}>PROJECTS</h1>
@@ -119,24 +128,24 @@ export default function Portfolio() {
                 </CardContent>
                 <CardActions>
                   <Button size="small" color="primary">
-                    <a target="_blank" href='https://github.com/phuong144/Njoy'>View</a>
+                    <a target="_blank" href='https://njoy-app.herokuapp.com/'>View</a>
                   </Button>
-                  <Button name='1' size="small" color="primary" target="_blank" href='https://github.com/phuong144/Njoy'>
+                  <Button name='1' size="small" color="primary" onClick={handleOpen4}>
                     Learn More
                   </Button>
                   <Modal
                     aria-labelledby="transition-modal-title"
                     aria-describedby="transition-modal-description"
                     className={classes.modal}
-                    open={open}
-                    onClose={handleClose}
+                    open={open4}
+                    onClose={handleClose4}
                     closeAfterTransition
                     BackdropComponent={Backdrop}
                     BackdropProps={{
                       timeout: 500
                     }}
                   >
-                    <Fade in={open}>
+                    <Fade in={open4}>
                       <div className={classes.paper}>
                         <h2>Njoy</h2>
                         <p>
@@ -145,7 +154,7 @@ export default function Portfolio() {
                           You can also drag and drop any scheduled activity to make it flexible to your own schedule!
                         </p>
                         <Button size="small" color="primary">
-                          <a target="_blank" href=''>View</a>
+                          <a target="_blank" href='https://njoy-app.herokuapp.com/'>View</a>
                         </Button>
                       </div>
                     </Fade>
