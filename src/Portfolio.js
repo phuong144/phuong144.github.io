@@ -154,7 +154,7 @@ export default function Portfolio() {
                           You can also drag and drop any scheduled activity to make it flexible to your own schedule!
                         </p>
                         <Button size="small" color="primary">
-                          <a target="_blank" href='https://njoy-app.herokuapp.com/'>View</a>
+                          <a target="_blank" href='https://youtu.be/0iSHOsaeFdE'>View Demo</a>
                         </Button>
                       </div>
                     </Fade>
