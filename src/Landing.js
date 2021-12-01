@@ -96,7 +96,7 @@ export default function Landing() {
               Patrick Phuong
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Software Development Engineer
+              Software Engineer
               <br></br>
               <a target='_blank' href={resume}>Resume</a>
             </Typography>
