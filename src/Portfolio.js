@@ -71,6 +71,7 @@ export default function Portfolio() {
   const [open2, setOpen2] = React.useState(false);
   const [open3, setOpen3] = React.useState(false);
   const [open4, setOpen4] = React.useState(false);
+  const [open5, setOpen5] = React.useState(false);
 
 
   const handleOpen = (e) => {
@@ -105,12 +106,69 @@ export default function Portfolio() {
     setOpen4(false);
   };
 
+  const handleOpen5 = (e) => {
+    setOpen5(true)
+  };
+
+  const handleClose5 = () => {
+    setOpen5(false);
+  }
+  
   return(
     <div id='projects' className={classes.heroContent}>
       <h1 style={{textAlign:'center'}}>PROJECTS</h1>
       <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card className={classes.card}>
+              <CardMedia
+                className={classes.cardMedia}
+                image={""}
+                title="Planter"
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Planter
+                </Typography>
+                <Typography>
+                  Learn how to best take care of a plant simply by taking a picture of it!
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small" color="primary">
+                  <a target="_blank" href='https://github.com/phuong144/plant-care-app'>View</a>
+                </Button>
+                <Button name='1' size="small" color="primary" onClick={handleOpen5}>
+                  Learn More
+                </Button>
+                <Modal
+                  aria-labelledby="transition-modal-title"
+                  aria-describedby="transition-modal-description"
+                  className={classes.modal}
+                  open={open5}
+                  onClose={handleClose5}
+                  closeAfterTransition
+                  BackdropComponent={Backdrop}
+                  BackdropProps={{
+                    timeout: 500
+                  }}
+                >
+                  <Fade in={open5}>
+                    <div className={classes.paper}>
+                      <h2>Planter</h2>
+                      <p>
+                      This mobile application utilizes the Plant.ID image recognition API to determine what type of plant was scanned. Once data is returned from the Plant.ID API, the app is web scraping from Plantcaretoday's website that has a searchable repository of articles on how to best take care of that plant.
+                      </p>
+                      <Button size="small" color="primary">
+                        <a target="_blank" href='https://github.com/phuong144/plant-care-app'>View</a>
+                      </Button>
+                    </div>
+                  </Fade>
+                </Modal>
+              </CardActions>
+            </Card>
+          </Grid>
           <Grid item xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia

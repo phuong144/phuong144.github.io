@@ -105,15 +105,11 @@ export default function Landing() {
         <Container className={classes.cardGrid} maxWidth="md">
           <h1 id='aboutme' style={{textAlign:'center'}}>ABOUT ME</h1>
           <Typography variant="h5" align="center" color="textPrimary" paragraph>
-            Hello! My name is Patrick Phuong. I am a new graduate from UC Santa Cruz with a bachelor's in Computer Science.
-            I have just over 2 years of experience as a software developer with Hydrologic Purification Systems! During my time there I was
-            able to lead and develop two full stack applications.
+            Hello! I am a recent graduate from UC Santa Cruz with a bachelor's in Computer Science. I have about a year of experience as a software engineer with an emphasis on full-stack development. In my most recent experience at a start-up, I developed APIs using Django and worked with React Native to build out UI.
           </Typography>
           <br></br>
           <Typography variant="h5" align="center" color="textPrimary" paragraph>
-            My key interests within software engineering revolves around full stack development! I really enjoy building React applications and
-            if I'm not building my own APIs with Node and Express, I'm utilizing Firebase or AWS! Besides full stack development, my other interests
-            include distributed systems, computer security, and cloud computing!
+            So far, I've really enjoyed being able to work on both the front-end and back-end development of things where I can see the fruition of my work come to life in front of me! Besides full stack development, I am also interested in distributed systems, computer security, and cloud computing!
           </Typography>
         </Container>
       </main>
