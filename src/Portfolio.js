@@ -18,6 +18,7 @@ import GoldenMean from './images/GoldenMean.jpg';
 import Njoy from './images/Njoy.png';
 import splits from './images/splits.jpg';
 import resistor from './images/resistor.png';
+import plant from './images/Plant.png';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
@@ -124,7 +125,7 @@ export default function Portfolio() {
             <Card className={classes.card}>
               <CardMedia
                 className={classes.cardMedia}
-                image={""}
+                image={plant}
                 title="Planter"
               />
               <CardContent className={classes.cardContent}>
